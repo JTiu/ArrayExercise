@@ -16,21 +16,21 @@ public class SamplesArray
         Console.Write("Object array: ");
         PrintValues(elevenObjectArray);
 
-        // Copies the first two elements from the integer array to the Object array.
-        System.Array.Copy(arrayTenInts, elevenObjectArray, 2);
+        // Copies the first thrree elements from the integer array to the Object array.
+        System.Array.Copy(arrayTenInts, elevenObjectArray, 3);
 
         // Prints the values of the modified arrays.
-        Console.WriteLine("\nAfter copying the first two elements of the integer array to the Object array,");
+        Console.WriteLine("\nAfter copying the first three elements of the integer array to the Object array,");
         Console.Write("integer array:");
         PrintValues(arrayTenInts);
         Console.Write("Object array: ");
         PrintValues(elevenObjectArray);
 
-        // Copies the last two elements from the Object array to the integer array.
-        System.Array.Copy(elevenObjectArray, elevenObjectArray.GetUpperBound(0) - 1, arrayTenInts, arrayTenInts.GetUpperBound(0) - 1, 2);
+        // Copies the last element from the Object array to the integer array.
+        System.Array.Copy(elevenObjectArray, elevenObjectArray.GetUpperBound(0) - 0, arrayTenInts, arrayTenInts.GetUpperBound(0) - 0, 1);
 
         // Prints the values of the modified arrays.
-        Console.WriteLine("\nAfter copying the last two elements of the Object array to the integer array,");
+        Console.WriteLine("\nAfter copying the last element of the Object array to the integer array,");
         Console.Write("integer array:");
         PrintValues(arrayTenInts);
         Console.Write("Object array: ");
