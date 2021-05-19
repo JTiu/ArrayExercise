@@ -38,21 +38,21 @@ public class SamplesArray
         Console.WriteLine("The End of Main");
         Console.ReadLine();
     }
-
+    //two different methods to print arrays
     public static void PrintTheseObjectValues(Object[] stringArray)
     {
-        foreach (Object i in stringArray)
+        foreach (Object thisObject in stringArray)
         {
-            Console.Write("\t{0}", i);
+            Console.Write("\t{0}", thisObject);
         }
         Console.WriteLine("\n^^^Method Prints Object values \n");
     }
 
     public static void PrintTheseIntValues(int[] objectArray)
     {
-        foreach (int i in objectArray)
+        foreach (int thisString in objectArray)
         {
-            Console.Write("\t{0}", i);
+            Console.Write("\t{0}", thisString);
         }
         Console.WriteLine("\n^^^Method Prints string values \n");
     }
